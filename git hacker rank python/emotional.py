@@ -17,7 +17,7 @@ recognizer = sr.Recognizer()
 OLLAMA_URL = "http://localhost:11434/api/generate"
 
 # ElevenLabs API Setup
-client = ElevenLabs(api_key="sk_7d4814e20caf8d07fb54c4810d8a4c4ee48893feb0f90474")
+client = ElevenLabs(api_key="#apikey")
 
 # Store Multiple Voices (Replace with actual Voice IDs)
 voice_options = {
@@ -49,7 +49,7 @@ def talk(text):
     audio = client.generate(text=text, voice=current_voice, stream=True)
     stream(audio)
 
-EMERGENCY_CONTACTS = ["+917550048417"]  # Add multiple numbers if needed
+EMERGENCY_CONTACTS = ["#phone number to send message"]  # Add multiple numbers if needed
 
 # Function to send an emergency WhatsApp alert instantly
 def send_emergency_alert():
