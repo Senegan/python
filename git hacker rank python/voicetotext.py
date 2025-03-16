@@ -1,3 +1,4 @@
+import speech_recognition as sr
 def listen():
     """Capture voice input from the correct Bluetooth microphone"""
     recognizer = sr.Recognizer()
