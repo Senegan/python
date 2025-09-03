@@ -1,10 +1,10 @@
 import pywhatkit
 
-EMERGENCY_CONTACTS = ["+917904370905","+918015370905"]  # Add multiple numbers if needed
+EMERGENCY_CONTACTS = ["+91xxxxx","+91xxxxxxx"]  # Add multiple numbers if needed
 
 # Function to send an emergency WhatsApp alert instantly
 def send_emergency_alert():
-    message = "⚠️ Guardian AI Alert: Motion detected, but no response from the user! Please check immediately."
+    message = "hi welcom to whatsapp"
     
     for contact in EMERGENCY_CONTACTS:
         print(f"Sending WhatsApp emergency alert to {contact}...")
